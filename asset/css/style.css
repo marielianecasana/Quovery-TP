@@ -1,0 +1,241 @@
+*,
+::after,
+::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: white;
+    width: 100%;
+}
+
+img {
+    max-width: 100%;
+}
+
+header {
+    display: flex;
+    padding: 2rem;
+    flex-wrap: wrap;
+    justify-content: left;
+    align-content: flex-start;
+    background-color: #151b2b;
+}
+
+header div {
+    margin: 0 0;
+}
+
+/*ContainerFirst*/
+.containerFirst {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #151b2b;
+    text-align: center;
+    gap: 2em;
+    justify-content: center;
+    align-content: flex-start;
+}
+
+.containerFirst article {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2em;
+    color: white;
+    justify-content: center;
+    text-align: center;
+    gap: 1em;
+}
+
+.containerFirst p {
+    font-size: smaller;
+}
+
+.star12 {
+    background-color: whitesmoke;
+    border-radius: 20%;
+    height: 8%;
+    margin-top: 2em;
+    border-bottom: 20em;
+    color: black;
+    justify-self: flex-start;
+
+}
+
+.seejoinfirst {
+    display: flex;
+    flex-direction: row;
+    gap: 2em;
+    justify-content: center;
+
+}
+
+a:hover {
+    background-color: blue;
+    opacity: 0.5;
+}
+
+.see {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: grey;
+    border-radius: 5%;
+    border-bottom: 5em;
+    color: white;
+    text-decoration: none;
+}
+
+.join {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgb(89, 89, 187);
+    border-radius: 5%;
+    border-bottom: 5em;
+    color: white;
+    text-decoration: none;
+}
+
+/*ContainerSecond*/
+.ContainerSecond {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: white;
+    text-align: center;
+    gap: 2em;
+    justify-content: center;
+    align-content: flex-start;
+}
+.ContainerSecond h2{
+    padding-top: 3em;
+}
+.seetwo {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: grey;
+    border-radius: 5%;
+    border-bottom: 5em;
+    color: white;
+    text-decoration: none;
+}
+
+.jointwo {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgb(89, 89, 187);
+    border-radius: 5%;
+    border-bottom: 5em;
+    color: white;
+    text-decoration: none;
+}
+
+/*ContainerThird*/
+.ContainerThird {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: white;
+    text-align: center;
+    gap: 5em;
+    padding: 2em;
+    justify-content: center;
+    align-content: flex-start;
+}
+
+.ContainerThird span {
+    gap: 20%;
+}
+
+.ContainerThird nav {
+    padding-top: 10%;
+    text-align: center;
+}
+
+.section img {
+    padding-top: 3em;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly
+}
+.seeMore {
+    border-radius: 5%;
+    border-bottom: 5em;
+    color: rgb(89, 89, 187);
+    text-decoration: none;
+}
+
+/*Footer*/
+.footer {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 1em;
+    gap: 5em;
+    background-color: white;
+    justify-content: center;
+    gap: 5%;
+}
+
+footer p {
+    text-align: center;
+    margin-top: 2em;
+    font-size: large;
+    font-weight: bold;
+}
+
+footer img {
+    max-width: 10%;
+    height: auto;
+
+}
+
+
+/*MediaQueries*/
+@media (min-width: 576px) {
+    .ContainerSecond {
+        display: inline-block;
+    }
+
+    .ContainerSecond p {
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+}
+
+@media (min-width: 768px) {}
+
+@media (min-width: 992px) {}
+
+@media (min-width: 1120px) {}
+
+
+@media (min-width: 1200px) {
+    .containerFirst {
+        display: inline-block;
+        flex-direction: column;
+        column-width: 25em;
+        justify-content: space-evenly;
+    }
+    .ContainerThird {
+        margin-top: 10%;
+        display: grid;
+        width: auto;
+        grid-template-columns: 500px 500px;
+        align-items: flex-start;
+        justify-content: space-evenly;
+    }
+}
+
+@media (min-width: 1281px) {
+    .containerFirst {
+        display: inline-block;
+        flex-direction: column;
+        column-width: 40em;
+        justify-content: space-evenly;
+    }
+}
